@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kenneth Schueman</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/kube.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/custom.min.css" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<style>
+		.intro h1:before {
+			/*Background text in h1*/
+			content: '';
+		}
+	</style>
+</head>
+<body>
+	<!-- Navigation -->
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+				    <span class="logo"></span>
+				</div>
+			    <nav id="navbar-1" class="navbar item-nav">
+				    <ul>
+				        <li class="active"><a href="#about">About</a></li>
+				        <li><a href="#experiences">Experiences</a></li>
+				        <li><a href="#achievements">Skills</a></li>
+				        <li><a href="#skills">Contact Me</a></li>
+				    </ul>
+				</nav>
+			</header>
+		</div>
+	</div>
+
+	<!-- Introduction -->
+	<div class="intro section" id="about">
+		<div class="container">
+			<p>Hi, I’m Kenneth Schueman</p>
+			<div class="units-row units-split wrap">
+				<div class="unit-20">
+					<img src="img/profile.jpg" alt="Avatar">
+				</div>
+				<div class="unit-80">
+					<h1>I'm interested in<br><span id="typed"></span></h1>
+				</div>
+				<p>
+					I am a second year Software Enginering student at the Iowa State University. 
+                    Orginally from the city of Chicago, I choose to go to Iowa State University because of the excellent Software Enginering program. 
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Work Experience -->
+	<div class="work section second" id="experiences">
+		<div class="container">
+			<h1>Relivant Experiences</h1>
+			<ul class="work-list">
+				<li>S E 185</li>
+				<li><a href="#">Problem Solving in C</a></li>
+				<li>Grade: A</li>
+			</ul>
+			<ul class="work-list">
+				<li>COM S 227</li>
+				<li><a href="#">Object oriented programing in Java</a></li>
+				<li>Grade: B</li>
+			</ul>
+			<ul class="work-list">
+				<li>COM S 228</li>
+				<li><a href="#">Data stuctures and Algorithms in Java</a></li>
+				<li>Grade: B</li>
+			</ul>
+            <ul class="work-list">
+				<li>CPR E 281</li>
+				<li><a href="#">Digital Logic</a></li>
+				<li>Grade: B</li>
+			</ul>
+            <ul class="work-list">
+				<li>COM S 288</li>
+				<li><a href="#">Embeded Systems I</a></li>
+				<li>In Progress</li>
+			</ul>
+            <ul class="work-list">
+				<li>S E 319</li>
+				<li><a href="#">User Interfaces</a></li>
+				<li>In Progress</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Technical Skills -->
+	<div class="skills section second" id="skills">
+		<div class="container">
+			<h1>Technical Skills</h1>
+			<ul class="skill-list list-flat">
+				<li>Web Technology</li>
+				<li>HTML / CSS / SASS / PHP / Javascript</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>General</li>
+				<li>C / C++ / Java / Phthon / Jupyter Notebook</li>
+			</ul>
+		</div>
+	</div>
+
+    <!-- Award & Achievements -->
+	<div class="award section second" id="achievements">
+		<div class="container">
+			<h1>Contact Me</h1>
+            <div class="units-row">
+                <ul class="social list-flat left">
+                    <li><a href="mailto:kenschue@iastate.edu"><i class="fa fa-send"> University</i></a></li>
+                    <li><a href="mailto:kenschue@proton.me"><i class="fa fa-send"> Personal</i></a></li>
+                    <li><a href="https://github.com/Kenneth-Schueman"><i class="fa fa-github"> GitHub</i></a></li>
+                </ul>
+		</div>
+	</div>
+
+	<!-- Quote -->
+	<div class="quote">
+		<div class="container text-centered">
+			<h1>We are just the universe experiencing itself.</h1>
+		</div>
+	</div>
+
+	<!-- Javascript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/typed.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+		function newTyped(){}$(function(){$("#typed").typed({
+		// Type effect
+		strings: ["embeded systems", "automotive design", "machine learning", "machine vision"],
+
+		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+    </script>
+</body>
+</html>
